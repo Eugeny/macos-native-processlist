@@ -5,7 +5,7 @@ jobs:
     runs-on: macOS-latest
     strategy:
       matrix:
-        node_version: [8, 10, 12]
+        node_version: [8, 10, 12] 
 
     steps:
     - uses: actions/checkout@v1
