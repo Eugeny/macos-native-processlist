@@ -11,4 +11,4 @@ NAN_MODULE_INIT(Init) {
   Export(target, "getProcessList", GetProcessList);
 }
 
-NODE_MODULE(NODE_GYP_MODULE_NAME, Init)
+NAN_MODULE_WORKER_ENABLED(NODE_GYP_MODULE_NAME, Init)
