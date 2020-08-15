@@ -3,7 +3,7 @@ on: [push, pull_request]
 jobs:
   test:
     name: Test on node ${{ matrix.node_version }}
-    runs-on: macOS-latest
+    runs-on: macos-latest
     strategy:
       matrix:
         node_version: [8, 10, 12]
@@ -19,3 +19,6 @@ jobs:
 
     - name: Build
       run: npm install
+
+    - name: Test
+      run: npm test
