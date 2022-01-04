@@ -21,7 +21,7 @@
     "node-addon-api": "3.1.0"
   },
   "devDependencies": {
-    "ava": "^3.11.1"
+    "ava": "^4.0.0"
   },
   "scripts": {
     "test": "ava"
