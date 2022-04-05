@@ -1,8 +1,8 @@
 #pragma once
+
 #include <napi.h>
-#include <uv.h>
+#include <memory>
 #include <sys/sysctl.h>
-#include <pwd.h>
 
 class Worker : public Napi::AsyncWorker
 {
@@ -14,6 +14,6 @@ public:
     void OnOK();
 
 private:
-    kinfo_proc *processes;
-    uint32_t *processCount;
+    std::unique_ptr<kinfo_proc[]> processes;
+    size_t processCount;
 };
