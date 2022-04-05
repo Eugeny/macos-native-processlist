@@ -1,6 +1,6 @@
 {
   "name": "macos-native-processlist",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Loads the full process list on macOS",
   "main": "index.js",
   "types": "typings/macos-native-processlist.d.ts",
