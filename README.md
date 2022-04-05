@@ -1,6 +1,6 @@
 # macos-native-processlist
 
-[![Build Status](https://travis-ci.com/Eugeny/macos-native-processlist.svg?branch=master)](https://travis-ci.com/Eugeny/macos-native-processlist)
+[![Build](https://github.com/Eugeny/macos-native-processlist/actions/workflows/main.yml/badge.svg)](https://github.com/Eugeny/macos-native-processlist/actions/workflows/main.yml)
 
 Loads list of processes on macOS natively, without any bullshit `ps` output parsing
 
