@@ -6,7 +6,7 @@ jobs:
     runs-on: macos-latest
     strategy:
       matrix:
-        node_version: [14, 16, 18]
+        node_version: [12, 14, 16]
 
     steps:
     - name: Checkout
@@ -15,7 +15,7 @@ jobs:
     - name: Installing Node
       uses: actions/setup-node@v1
       with:
-        version: ${{ matrix.node_version }}
+        node-version: ${{ matrix.node_version }}
 
     - name: Build
       run: yarn
